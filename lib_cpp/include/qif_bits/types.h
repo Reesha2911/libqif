@@ -20,12 +20,12 @@ typedef mppp::rational<1> rat;
 typedef QIF_DEFAULT_ET eT_def;
 
 // Chan, Prob
-using arma::Mat;
-using arma::mat;
+using arma::SpMat;
+using arma::spmat;
 using arma::Row;
 using arma::Col;
 
-template<typename eT> using Chan = Mat<eT>;
+template<typename eT> using Chan = SpMat<eT>;
 template<typename eT> using Prob = Row<eT>;
 
 typedef Chan<double> chan;
